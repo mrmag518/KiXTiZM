@@ -9,6 +9,21 @@ export type PlatformKey =
 
 export type CtaVariant = "primary" | "secondary" | "ghost";
 
+export type GoLinkKey =
+  | "latest"
+  | "spotify"
+  | "youtube"
+  | "apple-music"
+  | "soundcloud"
+  | "instagram"
+  | "x"
+  | "tiktok";
+
+export interface NavItem {
+  label: string;
+  href: string;
+}
+
 export interface PlatformLink {
   key: PlatformKey;
   label: string;
@@ -44,6 +59,7 @@ export interface HeroContent {
 export interface SiteImages {
   heroBanner: string;
   profileAvatar: string;
+  ogImage: string;
 }
 
 export interface SiteConfig {
@@ -58,6 +74,7 @@ export interface SiteConfig {
   bio: string;
   hero: HeroContent;
   images: SiteImages;
+  nav: NavItem[];
   featuredRelease: FeaturedRelease;
   featuredVideo: FeaturedVideo;
   platforms: Record<PlatformKey, PlatformLink>;

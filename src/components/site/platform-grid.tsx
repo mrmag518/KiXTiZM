@@ -2,6 +2,7 @@ import { CtaLink } from "@/components/ui/cta-link";
 import { Section } from "@/components/ui/section";
 import { SectionTitle } from "@/components/ui/section-title";
 import { siteConfig } from "@/config/site";
+import { getPlatformGoHref } from "@/lib/go-links";
 
 export function PlatformGrid() {
   const orderedPlatforms = [
@@ -13,8 +14,8 @@ export function PlatformGrid() {
     <Section id="listen">
       <SectionTitle
         eyebrow="Listen and follow"
-        title="Everything important in one place."
-        body="The homepage stays focused, but every major platform still gets a clear route. Primary listening destinations are emphasized without burying the rest."
+        title="Find it where you already listen."
+        body="The main places are all here. No digging around, no link tree maze."
       />
 
       <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -36,7 +37,7 @@ export function PlatformGrid() {
             </div>
 
             <div className="mt-6">
-              <CtaLink href={platform.href} external>
+              <CtaLink href={getPlatformGoHref(platform.key)} external>
                 Open {platform.shortLabel}
               </CtaLink>
             </div>

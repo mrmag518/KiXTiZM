@@ -2,12 +2,9 @@ import { CtaLink } from "@/components/ui/cta-link";
 import { Section } from "@/components/ui/section";
 import { SectionTitle } from "@/components/ui/section-title";
 import { siteConfig } from "@/config/site";
+import { getPlatformGoHref } from "@/lib/go-links";
 
-const secondaryContactPlatforms = [
-  siteConfig.platforms.instagram,
-  siteConfig.platforms.x,
-  siteConfig.platforms.youtube,
-];
+const secondaryContactPlatformKeys = ["instagram", "x", "youtube"] as const;
 
 export function ContactSection() {
   return (
@@ -17,8 +14,8 @@ export function ContactSection() {
           <div className="space-y-5">
             <SectionTitle
               eyebrow="Contact"
-              title="Direct contact stays simple."
-              body="Email is the primary route for contact. Social platforms remain available for reach, but the site keeps the main path obvious."
+              title="Best way to reach me"
+              body="Email is the main route. The other platforms are there too, but this keeps the obvious one obvious."
             />
 
             <div>
@@ -40,16 +37,20 @@ export function ContactSection() {
               Email KiXTiZM
             </CtaLink>
 
-            {secondaryContactPlatforms.map((platform) => (
-              <CtaLink
-                key={platform.key}
-                href={platform.href}
-                external
-                ariaLabel={platform.ariaLabel}
-              >
-                {platform.label}
-              </CtaLink>
-            ))}
+            {secondaryContactPlatformKeys.map((platformKey) => {
+              const platform = siteConfig.platforms[platformKey];
+
+              return (
+                <CtaLink
+                  key={platform.key}
+                  href={getPlatformGoHref(platform.key)}
+                  external
+                  ariaLabel={platform.ariaLabel}
+                >
+                  {platform.label}
+                </CtaLink>
+              );
+            })}
           </div>
         </div>
       </div>

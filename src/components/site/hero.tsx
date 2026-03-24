@@ -1,7 +1,9 @@
 import Image from "next/image";
 
+import { SiteHeader } from "@/components/site/site-header";
 import { CtaLink } from "@/components/ui/cta-link";
 import { siteConfig } from "@/config/site";
+import { getGoHref, getPlatformGoHref } from "@/lib/go-links";
 
 export function Hero() {
   const primaryPlatforms = siteConfig.primaryPlatformOrder.map(
@@ -26,10 +28,12 @@ export function Hero() {
 
       <div className="absolute inset-0 bg-black/45" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,139,31,0.20),transparent_34%)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,3,4,0.30)_0%,rgba(5,3,4,0.48)_38%,rgba(5,3,4,0.88)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,3,4,0.24)_0%,rgba(5,3,4,0.44)_38%,rgba(5,3,4,0.90)_100%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,3,4,0.92)_0%,rgba(5,3,4,0.62)_42%,rgba(5,3,4,0.25)_100%)]" />
 
-      <div className="site-shell relative flex min-h-[92svh] items-end py-24 sm:py-28 lg:py-32">
+      <SiteHeader />
+
+      <div className="site-shell relative flex min-h-[92svh] items-end py-24 pt-32 sm:py-28 sm:pt-36 lg:py-32 lg:pt-40">
         <div className="grid w-full gap-8 lg:grid-cols-[minmax(0,1.15fr)_380px] lg:items-end">
           <div className="max-w-3xl space-y-8">
             <div className="space-y-4">
@@ -51,18 +55,14 @@ export function Hero() {
             </div>
 
             <div className="flex flex-wrap gap-3">
-              <CtaLink
-                href={siteConfig.featuredRelease.href}
-                external
-                variant="primary"
-              >
+              <CtaLink href={getGoHref("latest")} external variant="primary">
                 {siteConfig.featuredRelease.ctaLabel}
               </CtaLink>
 
               {primaryPlatforms.map((platform) => (
                 <CtaLink
                   key={platform.key}
-                  href={platform.href}
+                  href={getPlatformGoHref(platform.key)}
                   external
                   ariaLabel={platform.ariaLabel}
                 >
@@ -75,7 +75,7 @@ export function Hero() {
               {secondaryPlatforms.map((platform) => (
                 <CtaLink
                   key={platform.key}
-                  href={platform.href}
+                  href={getPlatformGoHref(platform.key)}
                   external
                   variant="ghost"
                   ariaLabel={platform.ariaLabel}
@@ -100,11 +100,7 @@ export function Hero() {
             </p>
 
             <div className="mt-6">
-              <CtaLink
-                href={siteConfig.featuredRelease.href}
-                external
-                variant="primary"
-              >
+              <CtaLink href={getGoHref("latest")} external variant="primary">
                 {siteConfig.featuredRelease.ctaLabel}
               </CtaLink>
             </div>

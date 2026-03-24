@@ -2,6 +2,7 @@ import { CtaLink } from "@/components/ui/cta-link";
 import { Section } from "@/components/ui/section";
 import { SectionTitle } from "@/components/ui/section-title";
 import { siteConfig } from "@/config/site";
+import { getGoHref } from "@/lib/go-links";
 
 export function FeaturedVideoSection() {
   const { featuredVideo } = siteConfig;
@@ -22,6 +23,7 @@ export function FeaturedVideoSection() {
                 title={featuredVideo.title}
                 src={featuredVideo.embedUrl}
                 className="h-full w-full"
+                loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
@@ -36,17 +38,16 @@ export function FeaturedVideoSection() {
               </p>
 
               <h3 className="text-3xl font-semibold tracking-tight text-white">
-                We can swap this to a real featured video next.
+                One video can live here.
               </h3>
 
               <p className="text-base leading-8 text-white/68">
-                For now, this section sends people directly to the channel. Once
-                I choose the first video or visualizer to feature, we only
-                need to add its embed URL in the config.
+                For now this can just point straight to the channel. Later I can
+                swap in any video from config.
               </p>
 
               <div className="pt-2">
-                <CtaLink href={featuredVideo.href} external variant="primary">
+                <CtaLink href={getGoHref("youtube")} external variant="primary">
                   {featuredVideo.ctaLabel}
                 </CtaLink>
               </div>
