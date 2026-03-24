@@ -18,14 +18,27 @@ export const siteConfig = {
     eyebrow: "Norwegian hardcore producer",
     tagline: "Dark hardcore. Heavy kicks. Controlled chaos.",
   },
+    images: {
+    heroBanner: "/images/hero-banner.png",
+    profileAvatar: "/images/profile-avatar.jpg",
+    },
   featuredRelease: {
     status: "upcoming",
     label: "Featured release",
     title: "Letz Not",
     description:
-      "Pre-save the upcoming release now. Note to self: Keep this object swappable so the homepage can later point to the newest live release instead.",
+      "Pre-save the upcoming release now. This card is intentionally config-driven so it can later switch cleanly to the newest live release.",
     href: "https://distrokid.com/hyperfollow/kixtizm/letz-not",
     ctaLabel: "Pre-save Letz Not",
+  },
+  featuredVideo: {
+    label: "Featured video",
+    title: "KiXTiZM on YouTube",
+    description:
+      "embed placeholder text.",
+    href: "https://www.youtube.com/@KiXTiZM",
+    ctaLabel: "Visit the YouTube channel",
+    embedUrl: "https://www.youtube.com/embed/s09lrBFw1so"
   },
   platforms: {
     spotify: {
@@ -34,6 +47,7 @@ export const siteConfig = {
       shortLabel: "Spotify",
       href: "https://open.spotify.com/artist/454og8hB6ZOK53LubpkIsy",
       ariaLabel: "Listen to KiXTiZM on Spotify",
+      description: "Primary streaming home for official releases.",
     },
     youtube: {
       key: "youtube",
@@ -41,6 +55,7 @@ export const siteConfig = {
       shortLabel: "YouTube",
       href: "https://www.youtube.com/@KiXTiZM",
       ariaLabel: "Watch KiXTiZM on YouTube",
+      description: "Visualizers, uploads, and future release content.",
     },
     instagram: {
       key: "instagram",
@@ -48,6 +63,7 @@ export const siteConfig = {
       shortLabel: "Instagram",
       href: "https://www.instagram.com/kixtizm/",
       ariaLabel: "Follow KiXTiZM on Instagram",
+      description: "Artist identity, visuals, and updates.",
     },
     soundcloud: {
       key: "soundcloud",
@@ -55,6 +71,7 @@ export const siteConfig = {
       shortLabel: "SoundCloud",
       href: "https://soundcloud.com/kixtizm",
       ariaLabel: "Listen to KiXTiZM on SoundCloud",
+      description: "Fast access to uploads and scene-facing listening.",
     },
     x: {
       key: "x",
@@ -62,6 +79,7 @@ export const siteConfig = {
       shortLabel: "X",
       href: "https://x.com/KiXTiZM",
       ariaLabel: "Follow KiXTiZM on X",
+      description: "Announcements, release posts, and quick updates.",
     },
     appleMusic: {
       key: "appleMusic",
@@ -69,6 +87,7 @@ export const siteConfig = {
       shortLabel: "Apple Music",
       href: "https://music.apple.com/us/artist/kixtizm/1881638030",
       ariaLabel: "Listen to KiXTiZM on Apple Music",
+      description: "Official Apple Music artist page.",
     },
     tiktok: {
       key: "tiktok",
@@ -76,6 +95,7 @@ export const siteConfig = {
       shortLabel: "TikTok",
       href: "https://www.tiktok.com/@kixtizm",
       ariaLabel: "Follow KiXTiZM on TikTok",
+      description: "Short-form reach and future promo experiments.",
     },
   },
   primaryPlatformOrder: ["spotify", "youtube", "appleMusic"],

@@ -15,6 +15,7 @@ export interface PlatformLink {
   shortLabel: string;
   href: string;
   ariaLabel: string;
+  description: string;
 }
 
 export interface FeaturedRelease {
@@ -26,9 +27,23 @@ export interface FeaturedRelease {
   ctaLabel: string;
 }
 
+export interface FeaturedVideo {
+  label: string;
+  title: string;
+  description: string;
+  href: string;
+  ctaLabel: string;
+  embedUrl?: string;
+}
+
 export interface HeroContent {
   eyebrow: string;
   tagline: string;
+}
+
+export interface SiteImages {
+  heroBanner: string;
+  profileAvatar: string;
 }
 
 export interface SiteConfig {
@@ -42,7 +57,9 @@ export interface SiteConfig {
   socialHandle: string;
   bio: string;
   hero: HeroContent;
+  images: SiteImages;
   featuredRelease: FeaturedRelease;
+  featuredVideo: FeaturedVideo;
   platforms: Record<PlatformKey, PlatformLink>;
   primaryPlatformOrder: PlatformKey[];
   secondaryPlatformOrder: PlatformKey[];
