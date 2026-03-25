@@ -19,7 +19,7 @@ export function SiteFooter() {
         <div className="space-y-1">
           <p className="text-sm font-medium text-white">{siteConfig.name}</p>
           <p className="text-sm text-white/52">
-            Dark hardcore. Heavy kicks. Controlled chaos.
+            Dark hardcore, weird ideas, and heavy kicks.
           </p>
         </div>
 
