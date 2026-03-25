@@ -1,7 +1,7 @@
 import type { GoLinkKey, SiteConfig } from "@/types/site";
 
 export const websiteBio =
-  "KiXTiZM is my hardcore project, built around dark atmosphere, heavy kicks, and ideas that should not work together but somehow do. I like forcing strange combinations back into something that still hits hard as hardcore, whether that means orchestral parts, cinematic drama, voices, BPM shifts, playful sounds, or textures that push a track somewhere stranger than usual. As long as the core stays hard, bouncy, and kick-driven, I want it to feel fresh, distinctive, and fully mine.";
+  "KiXTiZM is my hardcore project, built around dark atmosphere, heavy kicks, and ideas that should not work together but somehow do. I like forcing strange combinations back into something that still hits hard as hardcore, whether that means orchestral parts, cinematic drama, voices, BPM shifts, playful sounds, or textures that push a track somewhere stranger than usual. As long as the core stays hard, bouncy, and kick-driven, I want it to feel fresh, distinctive, and something I can't just keep to myself.";
 
 export const siteConfig = {
   name: "KiXTiZM",
