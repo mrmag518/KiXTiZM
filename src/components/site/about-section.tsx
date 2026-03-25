@@ -5,9 +5,9 @@ import { SectionTitle } from "@/components/ui/section-title";
 import { siteConfig } from "@/config/site";
 
 const highlights = [
-  "Dark atmosphere, but still controlled",
-  "Heavy kicks first",
-  "Weird ideas are allowed if they actually work",
+  "Dark, kick-driven, and bouncy",
+  "Cinematic and dramatic stuff is very welcome",
+  "Weird ideas are even more welcome, as long as they work",
 ] as const;
 
 export function AboutSection() {
@@ -28,7 +28,7 @@ export function AboutSection() {
         <div className="space-y-8">
           <SectionTitle
             eyebrow="About"
-            title="Hard kicks first. The rest has to earn its place."
+            title="Hard kicks first. Everything else earns its place."
             body={siteConfig.bio}
           />
 

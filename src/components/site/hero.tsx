@@ -15,7 +15,7 @@ export function Hero() {
   );
 
   return (
-    <section className="relative isolate min-h-[92svh] overflow-hidden border-b border-white/10">
+    <section className="relative isolate min-h-[92svh]">
       <Image
         src={siteConfig.images.heroBanner}
         alt=""
@@ -30,6 +30,8 @@ export function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,139,31,0.20),transparent_34%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,3,4,0.24)_0%,rgba(5,3,4,0.44)_38%,rgba(5,3,4,0.90)_100%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,3,4,0.92)_0%,rgba(5,3,4,0.62)_42%,rgba(5,3,4,0.25)_100%)]" />
+      <div className="absolute inset-x-0 bottom-0 h-54 bg-[linear-gradient(180deg,rgba(5,3,4,0)_0%,rgba(5,3,4,0.76)_58%,#050304_100%)]" />
+      <div className="pointer-events-none absolute inset-x-0 -bottom-16 h-28 bg-[linear-gradient(180deg,rgba(5,3,4,0.92)_0%,#050304_100%)] blur-2xl" />
 
       <SiteHeader />
 

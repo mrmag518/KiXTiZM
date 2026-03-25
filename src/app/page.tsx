@@ -28,7 +28,12 @@ export default function Home() {
         }}
       />
 
-      <main className="flex min-h-screen flex-col">
+      <main className="relative isolate flex min-h-screen flex-col overflow-hidden bg-[#050304]">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_0%,rgba(255,139,31,0.10),transparent_26%),linear-gradient(180deg,#090506_0%,#070405_100%)]"
+        />
+
         <Hero />
         <AboutSection />
         <PlatformGrid />

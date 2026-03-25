@@ -1,7 +1,7 @@
 import type { GoLinkKey, SiteConfig } from "@/types/site";
 
 export const websiteBio =
-  "KiXTiZM is my hardcore project. I make dark, kick-heavy tracks with a lot of energy, a lot of intent, and room for odd ideas that should not work but somehow do. The goal is simple: make tracks that hit hard, feel like their own thing, and actually stick with people.";
+  "KiXTiZM is my hardcore project, built around dark atmosphere, heavy kicks, and ideas that should not work together but somehow do. I like pulling in unexpected elements, whether that means orchestral parts, cinematic drama, voices, BPM changes, playful sounds, or textures that push the track somewhere stranger than usual. As long as the core stays hard, bouncy, and kick-driven, I want it to feel fresh, distinctive, and fully my own.";
 
 export const siteConfig = {
   name: "KiXTiZM",
@@ -16,12 +16,12 @@ export const siteConfig = {
   bio: websiteBio,
   hero: {
     eyebrow: "Norwegian hardcore producer",
-    tagline: "Dark hardcore, heavy kicks, and a bit too much electricity.",
+    tagline: "Dark hardcore, heavy kicks, and a bit too much of anything dissimilar.",
   },
   images: {
-    heroBanner: "/images/hero-banner.png",
+    heroBanner: "/images/hero-banner.jpg",
     profileAvatar: "/images/profile-avatar.jpg",
-    ogImage: "/images/hero-banner.png",
+    ogImage: "/images/hero-banner.jpg",
   },
   nav: [
     { label: "About", href: "#about" },
