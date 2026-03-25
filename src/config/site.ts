@@ -22,7 +22,6 @@ export const siteConfig = {
   images: {
     heroBanner: "/images/hero-banner.jpg",
     profileAvatar: "/images/profile-avatar.jpg",
-    ogImage: "/images/hero-banner.jpg",
   },
   nav: [
     { label: "About", href: "#about" },

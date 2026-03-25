@@ -15,8 +15,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const ogImageUrl = `${siteConfig.url}${siteConfig.images.ogImage}`;
-
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
@@ -49,19 +47,12 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     siteName: siteConfig.name,
     locale: siteConfig.locale,
-    images: [
-      {
-        url: ogImageUrl,
-        alt: `${siteConfig.name} artwork`,
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.title,
     description: siteConfig.description,
     creator: siteConfig.socialHandle,
-    images: [ogImageUrl],
   },
   robots: {
     index: true,

@@ -59,7 +59,6 @@ export interface HeroContent {
 export interface SiteImages {
   heroBanner: string;
   profileAvatar: string;
-  ogImage: string;
 }
 
 export interface SiteConfig {
