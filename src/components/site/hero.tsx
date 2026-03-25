@@ -53,7 +53,7 @@ export function Hero() {
               </p>
 
               <p className="max-w-xl text-base leading-8 text-white/72 sm:text-lg">
-                {siteConfig.bio}
+                {siteConfig.hero.description}
               </p>
             </div>
 

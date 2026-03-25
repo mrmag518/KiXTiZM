@@ -55,6 +55,7 @@ export interface FeaturedVideo {
 export interface HeroContent {
   eyebrow: string;
   tagline: string;
+  description: string;
 }
 
 export interface SiteImages {

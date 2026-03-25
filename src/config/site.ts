@@ -19,6 +19,8 @@ export const siteConfig = {
     eyebrow: "Norwegian hardcore producer",
     tagline:
       "Hardcore / Uptempo Hardcore, heavy kicks, and more weird ideas than there should be room for.",
+    description:
+      "KiXTiZM is my hardcore project, built around heavy kicks, dark atmosphere, and strange combinations that somehow still hit like hardcore.",
   },
   images: {
     heroBanner: "/images/hero-banner.jpg",
