@@ -34,7 +34,7 @@ export function PlatformGrid() {
               <div className="flex items-center gap-2">
                 <Image
                   src={platform.icon}
-                  alt=""
+                  alt={platform.shortLabel}
                   width={16}
                   height={16}
                   className="h-4 w-4 opacity-80 invert transition-transform duration-200 group-hover:scale-105"

@@ -15,7 +15,7 @@ export default function Home() {
     description: siteConfig.description,
     email: siteConfig.email,
     image: `${siteConfig.url}${siteConfig.images.profileAvatar}`,
-    genre: ["Hardcore", "Uptempo Hardcore", "Dark Hardcore"],
+    genre: ["Hardcore", "Uptempo Hardcore", "Experimental Hardcore"],
     sameAs: Object.values(siteConfig.platforms).map((platform) => platform.href),
   };
 

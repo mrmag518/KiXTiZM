@@ -72,6 +72,7 @@ export interface SiteConfig {
   email: string;
   socialHandle: string;
   bio: string;
+  seoLabel: string;
   hero: HeroContent;
   images: SiteImages;
   nav: NavItem[];

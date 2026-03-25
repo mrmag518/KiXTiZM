@@ -5,19 +5,20 @@ export const websiteBio =
 
 export const siteConfig = {
   name: "KiXTiZM",
-  title: "KiXTiZM | Dark hardcore, heavy kicks, and controlled chaos",
+  title: "KiXTiZM | Hardcore / Uptempo Hardcore, heavy kicks, and controlled chaos",
   description:
-    "Official site for KiXTiZM. Dark hardcore, heavy kicks, latest release links, videos, and the main places to find me online.",
+    "Official site for KiXTiZM. Hardcore / Uptempo Hardcore, heavy kicks, latest release links, videos, and the main places to find me online.",
   url: "https://kixtizm.com",
   domain: "kixtizm.com",
   locale: "en_US",
   email: "contact@kixtizm.com",
   socialHandle: "@KiXTiZM",
   bio: websiteBio,
+  seoLabel: "Norwegian uptempo hardcore producer",
   hero: {
     eyebrow: "Norwegian hardcore producer",
     tagline:
-      "Dark hardcore, heavy kicks, and more weird ideas than there should be room for.",
+      "Hardcore / Uptempo Hardcore, heavy kicks, and more weird ideas than there should be room for.",
   },
   images: {
     heroBanner: "/images/hero-banner.jpg",

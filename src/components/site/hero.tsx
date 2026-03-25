@@ -18,7 +18,7 @@ export function Hero() {
     <section className="relative isolate min-h-[92svh]">
       <Image
         src={siteConfig.images.heroBanner}
-        alt=""
+        alt="KiXTiZM hero banner"
         fill
         priority
         className="object-cover opacity-40"
@@ -45,6 +45,7 @@ export function Hero() {
 
               <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-white sm:text-6xl md:text-7xl">
                 {siteConfig.name}
+                <span className="sr-only"> — {siteConfig.seoLabel}</span>
               </h1>
 
               <p className="max-w-xl text-2xl leading-9 text-white/84 sm:text-2xl">
