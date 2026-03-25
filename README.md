@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KiXTiZM Website
 
-## Getting Started
+Official website for **KiXTiZM**.
 
-First, run the development server:
+This project is a custom-built artist hub made with Next.js. It acts as a single source of truth for music, videos, release links, and contact info, while also being built to a quality standard that makes sense as a portfolio project.
+
+## What the site is for
+
+The site is meant to do two things well:
+
+- give listeners a clear place to find KiXTiZM across platforms
+- serve as a polished frontend project with modern structure, clean code, and good foundations
+
+## Stack
+
+- Next.js 16
+- TypeScript
+- Tailwind CSS v4
+- React 19
+- App Router
+- ESLint
+- Vercel deployment
+
+## Current features
+
+- single-page artist homepage
+- hero section with branded artwork
+- featured release CTA
+- about section
+- platform grid
+- featured video section
+- contact section
+- responsive layout
+- config-driven site content
+- branded redirect routes under `/go/...`
+- metadata, Open Graph, robots, sitemap, and structured data
+
+## Project structure
+
+```text
+src/
+  app/
+    go/[target]/route.ts
+    globals.css
+    layout.tsx
+    page.tsx
+    robots.ts
+    sitemap.ts
+
+  components/
+    site/
+    ui/
+
+  config/
+    site.ts
+
+  lib/
+    cn.ts
+    go-links.ts
+
+  types/
+    site.ts
+
+public/
+  images/
+```
+
+## Notes on structure
+
+A few important things are centralized on purpose:
+
+- `src/config/site.ts` holds the main site content, featured release, platform links, and metadata-related values
+- `src/lib/go-links.ts` keeps internal redirect targets in one place
+- homepage sections are split into focused components instead of being dumped into one file
+
+That makes the site easier to maintain and easier to change later when release links, copy, or layout need updating.
+
+## Local development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the dev server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run linting:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run lint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the production build locally:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Redirect routes
 
-## Deploy on Vercel
+The site uses internal branded redirect routes such as:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `/go/latest`
+- `/go/spotify`
+- `/go/youtube`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+These exist so platform and campaign links can be changed in one place later without rewriting UI components everywhere.
+
+## Deployment
+
+The site is deployed with **Vercel** and connected to a custom domain.
+
+## Status
+
+This is an actively developed project.  
+Current work is focused on branding polish, content refinement, and overall presentation quality.
