@@ -42,7 +42,7 @@ export const siteConfig = {
     label: "Featured video",
     title: "Latest upload",
     description:
-      "The newest visualizer or upload from the KiXTiZM channel lives here.",
+      "The newest visualizer or upload from the KiXTiZM channel.",
     href: "https://www.youtube.com/@KiXTiZM",
     ctaLabel: "Watch on YouTube",
     embedUrl: "https://www.youtube.com/embed/s09lrBFw1so",
@@ -55,6 +55,7 @@ export const siteConfig = {
       href: "https://open.spotify.com/artist/454og8hB6ZOK53LubpkIsy",
       ariaLabel: "Listen to KiXTiZM on Spotify",
       description: "Main place for official releases.",
+      icon: "/icons/spotify.svg",
     },
     youtube: {
       key: "youtube",
@@ -63,6 +64,7 @@ export const siteConfig = {
       href: "https://www.youtube.com/@KiXTiZM",
       ariaLabel: "Watch KiXTiZM on YouTube",
       description: "Visualizers, uploads, and future chaos.",
+      icon: "/icons/youtube.svg",
     },
     instagram: {
       key: "instagram",
@@ -71,6 +73,7 @@ export const siteConfig = {
       href: "https://www.instagram.com/kixtizm/",
       ariaLabel: "Follow KiXTiZM on Instagram",
       description: "Visuals, updates, and artist stuff.",
+      icon: "/icons/instagram.svg",
     },
     soundcloud: {
       key: "soundcloud",
@@ -79,6 +82,7 @@ export const siteConfig = {
       href: "https://soundcloud.com/kixtizm",
       ariaLabel: "Listen to KiXTiZM on SoundCloud",
       description: "Quick access to uploads and scene-facing listening.",
+      icon: "/icons/soundcloud.svg",
     },
     x: {
       key: "x",
@@ -87,6 +91,7 @@ export const siteConfig = {
       href: "https://x.com/KiXTiZM",
       ariaLabel: "Follow KiXTiZM on X",
       description: "Release posts, quick updates, and links.",
+      icon: "/icons/x.svg",
     },
     appleMusic: {
       key: "appleMusic",
@@ -95,6 +100,7 @@ export const siteConfig = {
       href: "https://music.apple.com/us/artist/kixtizm/1881638030",
       ariaLabel: "Listen to KiXTiZM on Apple Music",
       description: "Official Apple Music artist page.",
+      icon: "/icons/apple-music.svg",
     },
     tiktok: {
       key: "tiktok",
@@ -103,6 +109,7 @@ export const siteConfig = {
       href: "https://www.tiktok.com/@kixtizm",
       ariaLabel: "Follow KiXTiZM on TikTok",
       description: "Short clips once I start using it properly.",
+      icon: "/icons/tiktok.svg",
     },
   },
   primaryPlatformOrder: ["spotify", "youtube", "soundcloud"],

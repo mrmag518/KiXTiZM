@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { CtaLink } from "@/components/ui/cta-link";
 import { Section } from "@/components/ui/section";
 import { SectionTitle } from "@/components/ui/section-title";
@@ -28,9 +30,21 @@ export function PlatformGrid() {
               <p className="text-xs font-medium uppercase tracking-[0.28em] text-white/48">
                 Platform
               </p>
-              <h3 className="text-2xl font-semibold tracking-tight text-white">
-                {platform.label}
-              </h3>
+
+              <div className="flex items-center gap-2">
+                <Image
+                  src={platform.icon}
+                  alt=""
+                  width={16}
+                  height={16}
+                  className="h-4 w-4 opacity-80 invert"
+                />
+
+                <h3 className="text-2xl font-semibold tracking-tight text-white">
+                  {platform.label}
+                </h3>
+              </div>
+
               <p className="text-sm leading-7 text-white/68">
                 {platform.description}
               </p>

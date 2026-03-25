@@ -31,6 +31,7 @@ export interface PlatformLink {
   href: string;
   ariaLabel: string;
   description: string;
+  icon: string;
 }
 
 export interface FeaturedRelease {
