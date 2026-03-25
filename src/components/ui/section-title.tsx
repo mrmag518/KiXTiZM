@@ -16,7 +16,7 @@ export function SectionTitle({
   const alignment = align === "center" ? "text-center" : "text-left";
 
   return (
-    <div className={cn("max-w-3xl space-y-4", alignment)}>
+    <div className={cn("max-w-3xl space-y-3 sm:space-y-4", alignment)}>
       {eyebrow ? (
         <p className="text-xs font-medium uppercase tracking-[0.32em] text-white/55">
           {eyebrow}
@@ -26,7 +26,7 @@ export function SectionTitle({
         {title}
       </h2>
       {body ? (
-        <p className="max-w-2xl text-base leading-8 text-white/68 sm:text-lg">
+        <p className="max-w-2xl text-base leading-8 text-white/68 sm:text-lg sm:leading-8">
           {body}
         </p>
       ) : null}

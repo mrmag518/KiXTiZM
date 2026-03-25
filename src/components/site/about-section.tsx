@@ -36,7 +36,7 @@ export function AboutSection() {
             {highlights.map((item) => (
               <div
                 key={item}
-                className="panel rounded-3xl border-white/10 px-5 py-4 text-sm leading-7 text-white/72"
+                className="panel panel-interactive rounded-3xl border-white/10 px-5 py-4 text-sm leading-7 text-white/72"
               >
                 {item}
               </div>

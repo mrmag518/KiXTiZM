@@ -24,7 +24,7 @@ export function PlatformGrid() {
         {orderedPlatforms.map((platform) => (
           <article
             key={platform.key}
-            className="panel rounded-[1.75rem] border-white/10 p-6"
+            className="group panel panel-interactive rounded-[1.75rem] border-white/10 p-6"
           >
             <div className="space-y-3">
               <p className="text-xs font-medium uppercase tracking-[0.28em] text-white/48">
@@ -37,7 +37,7 @@ export function PlatformGrid() {
                   alt=""
                   width={16}
                   height={16}
-                  className="h-4 w-4 opacity-80 invert"
+                  className="h-4 w-4 opacity-80 invert transition-transform duration-200 group-hover:scale-105"
                 />
 
                 <h3 className="text-2xl font-semibold tracking-tight text-white">

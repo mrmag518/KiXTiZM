@@ -107,14 +107,17 @@ export function Hero() {
               </CtaLink>
             </div>
 
-            <div className="mt-8 border-t border-white/10 pt-6">
-              <p className="text-sm text-white/52">Primary contact</p>
-              <a
-                href={`mailto:${siteConfig.email}`}
-                className="mt-2 inline-flex text-sm text-white transition-colors hover:text-[var(--brand-strong)]"
-              >
-                {siteConfig.email}
-              </a>
+            <div className="mt-8 pt-6">
+              <div className="soft-divider" />
+              <div className="pt-6">
+                <p className="text-sm text-white/52">Primary contact</p>
+                <a
+                  href={`mailto:${siteConfig.email}`}
+                  className="mt-2 inline-flex text-sm text-white transition-colors hover:text-[var(--brand-strong)]"
+                >
+                  {siteConfig.email}
+                </a>
+              </div>
             </div>
           </aside>
         </div>
