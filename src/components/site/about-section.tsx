@@ -13,8 +13,8 @@ const highlights = [
 export function AboutSection() {
   return (
     <Section id="about">
-      <div className="grid gap-10 lg:grid-cols-[360px_minmax(0,1fr)] lg:items-center">
-        <div className="panel overflow-hidden rounded-[2rem]">
+      <div className="grid gap-8 lg:grid-cols-[320px_minmax(0,1fr)] lg:items-center xl:grid-cols-[360px_minmax(0,1fr)]">
+        <div className="panel mx-auto max-w-sm overflow-hidden rounded-[2rem] lg:mx-0">
           <Image
             src={siteConfig.images.profileAvatar}
             alt="KiXTiZM profile artwork"

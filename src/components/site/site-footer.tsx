@@ -14,8 +14,8 @@ const footerPlatformOrder = [
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-white/10 py-8">
-      <div className="site-shell flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+    <footer className="py-10">
+      <div className="site-shell flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
         <div className="space-y-1">
           <p className="text-sm font-medium text-white">{siteConfig.name}</p>
           <p className="text-sm text-white/52">
